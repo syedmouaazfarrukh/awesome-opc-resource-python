@@ -4,8 +4,6 @@ import asyncio
 from asyncua import Client, Node, ua
 import json
 
- 
-
 async def main():
        Tag_names = ["ACC4","AIN_Alt_AT_Mul","Alarm_Ack", 'Air_Flow', ]
 

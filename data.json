@@ -1,0 +1,22 @@
+{
+    "Oil_Gas.site1.ACC4": {
+        "DataType": "Int32",
+        "Value": 5953,
+        "Description": null
+    },
+    "Oil_Gas.site1.AIN_Alt_AT_Mul": {
+        "DataType": "Int32",
+        "Value": 6028,
+        "Description": null
+    },
+    "Oil_Gas.site1.Air_Flow": {
+        "DataType": "Float",
+        "Value": 62.5,
+        "Description": null
+    },
+    "Oil_Gas.site1.Alarm_Ack": {
+        "DataType": "Boolean",
+        "Value": false,
+        "Description": null
+    }
+}
