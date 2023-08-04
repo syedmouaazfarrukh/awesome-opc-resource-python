@@ -1,34 +1,28 @@
-import openpyxl
+import pandas as pd
 
-def excel_column_to_list(excel_file, sheet_name, column_name):
-    # Load the Excel file
-    workbook = openpyxl.load_workbook(excel_file)
-
-    # Select the worksheet by name
-    sheet = workbook[sheet_name]
-
-    # Find the column index based on the column name (assuming it's in the first row)
-    column_index = None
-    for cell in sheet[1]:
-        if cell.value == column_name:
-            column_index = cell.column
-            break
-
-    if column_index is None:
-        raise ValueError(f"Column '{column_name}' not found in the Excel sheet.")
-
-    # Extract the values from the specified column and convert them to a list of strings
-    column_values = [str(cell.value) for cell in sheet[column_index]]
-
-    return column_values
-
-if __name__ == "__main__":
-    excel_file = "tag-names.xlsx"
-    sheet_name = "tag-names"
-    column_name = "TagName"
-
+def read_column_from_csv(file_path, column_name):
     try:
-        column_list = excel_column_to_list(excel_file, sheet_name, column_name)
-        print(column_list)
+        # Read the CSV file
+        df = pd.read_csv(file_path)
+
+ 
+
+        # Check if the column exists in the DataFrame
+        if column_name in df.columns:
+            # Retrieve the column as a list
+            column_data = df[column_name].tolist()
+            return column_data
+        else:
+            print(f"Column '{column_name}' not found in the CSV file.")
+            return []
     except Exception as e:
-        print(f"Error: {e}")
+        print(f"Error occurred while reading the CSV file: {e}")
+        return []
+
+ 
+
+# Example usage
+file_path = "D:\\\\Mouaaz\\\\Octopus\\\\Cloud Engineer - GCP Trainee\\\\Daily Tasks\\\\Github\\\\awesome-opc-resource-python\\\\TagNames.csv"
+column_name = "TagNames"
+column_data = read_column_from_csv(file_path, column_name)
+print(column_data)
