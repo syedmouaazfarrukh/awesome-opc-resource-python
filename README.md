@@ -9,10 +9,26 @@ OPC is a set of communication standards used in industrial automation and proces
 ## Architecture
 
 The OPC architecture consists of two main components:
+- OPC Server
+    - Progammable Logic Contorllers
+        - Sensor Configuration
+- OPC Server Platforms
+    - Matrikon
+    - KEPServerEx
+    - TOP Server
+    - Siemens Simatic
+- OPC Clients
+    - UA Clients
+    - DA Clients
+- Edge Networks
+- PubSub Model
+- Cloud Integration
+
 - OPC Server: The OPC server acts as a data provider, exposing process and control data from industrial devices and systems. It serves data through OPC interfaces, making it accessible to OPC clients.
 - OPC Client: The OPC client is an application that consumes data from OPC servers. It uses OPC interfaces to browse, read, and write data to the connected OPC servers.
 
 ## Getting Started
+
 If you are new to OPC development in Python, you can start by exploring the following resources:
 - OPC UA Specification - The official OPC UA specification provided by the OPC Foundation.
 - Python OPC UA Documentation - Documentation for the Python OPC UA library, which allows you to develop OPC UA servers and clients.

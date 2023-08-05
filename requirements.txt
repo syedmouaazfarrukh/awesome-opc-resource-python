@@ -1,7 +1,0 @@
-4. efficiency in retrieval
-1. Read every tag/second
-2. Package daily data and Upload in bucket
-3. Increase the list of tag names (Excel file-1285)
-
-
--- DataType - Timestamp (system)
