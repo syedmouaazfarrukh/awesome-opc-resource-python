@@ -8,7 +8,10 @@ OPC is a set of communication standards used in industrial automation and proces
 
 ## Architecture
 
-The OPC architecture consists of two main components:
+The OPC architecture consists of many components from sensors to cloud infrastructor covering OT and IOT technologies, the following image showcases some of the basic components that architects an OPC. They are also listed below:
+
+![Alt text](image.png)
+
 - OPC Server
     - Progammable Logic Contorllers
         - Sensor Configuration
