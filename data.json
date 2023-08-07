@@ -1,26 +1,22 @@
 {
-    "Oil_Gas.site1.ACC4": {
-        "Timestamp": "2023-08-04T10:56:28.891623",
-        "DataType": "Int32",
-        "Value": 5828,
-        "Description": null
-    },
-    "Oil_Gas.site1.AIN_Alt_AT_Mul": {
-        "Timestamp": "2023-08-04T10:56:30.830315",
-        "DataType": "Int32",
-        "Value": 5960,
-        "Description": null
-    },
-    "Oil_Gas.site1.Air_Flow": {
-        "Timestamp": "2023-08-04T10:56:39.002826",
-        "DataType": "Float",
-        "Value": 193.0,
-        "Description": null
-    },
-    "Oil_Gas.site1.Alarm_Ack": {
-        "Timestamp": "2023-08-04T10:56:42.808702",
-        "DataType": "Boolean",
-        "Value": true,
-        "Description": null
-    }
+  "Oil_Gas.site1.ACC4": {
+    "Timestamp": "2023-08-04T16:57:11.158523",
+    "Description": null,
+    "Value": 3409
+  },
+  "Oil_Gas.site1.AIN_Alt_AT_Mul": {
+    "Timestamp": "2023-08-04T16:57:12.814558",
+    "Description": null,
+    "Value": 3515
+  },
+  "Oil_Gas.site1.Air_Flow": {
+    "Timestamp": "2023-08-04T16:57:20.260587",
+    "Description": null,
+    "Value": 184.0
+  },
+  "Oil_Gas.site1.Alarm_Ack": {
+    "Timestamp": "2023-08-04T16:57:23.668440",
+    "Description": null,
+    "Value": true
+  }
 }
