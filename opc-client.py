@@ -1,42 +1,38 @@
 
+# ------ USING ASYNCUA FUNCTION---------
 
 import asyncio
 from asyncua import Client, Node, ua
 
+# ----------FOR OPCUA FUNCTION----------
+# *COMMENT THE AYSNCUA LIBRARY & FUNCTION BEFORE USING OPCUA  
+# from opcua import opcuaClient
+
 
 async def using_asyncua_lib():
+    
+       # -----ESTABLISHES CLIENT & READS ROOT NODE------
        
-       url = "opc.tcp://168.63.250.196:49320"
+       url = "ADD YOUR SERVER IP-ADDRESS WITHIN THIS"
        async with Client(url=url) as client:
             root = client.get_root_node()
-        
-            # Find the "Objects" node and get its children
-            objects_node = await root.get_child(["Objects"])
-            print(objects_node)
-            objects_children = await objects_node.get_children()
-            for i in objects_children:
-                print(i,"\n")
-            print(objects_children)
+            print("Root node using asyncua library is",root)
 
-
-async def using_opcua_lib():
+def using_opcua_lib():
        
-        url = "opc.tcp://168.63.250.196:49320"
+        # -----ESTABLISHES CLIENT & READS ROOT NODE------
+
+        url = "ADD YOUR SERVER IP-ADDRESS WITHIN THIS"
         client = Client(url)
-        root = client.get_root_node()
+        client.connect()
+        root = client.get_objects_node()
+        print("Root node using opcua library is",root)
         
-        # Find the "Objects" node and get its children
-        objects_node = await root.get_child(["Objects"])
-        print(objects_node)
-            objects_children = await objects_node.get_children()
-            for i in objects_children:
-                print(i,"\n")
-            print(objects_children)
-
-
 
 if __name__ == '__main__':
      
-     asyncio.run(using_asyncua_lib())
-     main()
+    establish_asyncclient = asyncio.run(using_asyncua_lib())
+    
+    # ---------USE FOR OPCUA TESTING---------
+    #establish_opcuaclient = using_opcua_lib()
      
