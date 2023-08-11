@@ -13,7 +13,7 @@ async def using_asyncua_lib():
     
        # -----ESTABLISHES CLIENT & READS ROOT NODE------
        
-       url = "ADD YOUR SERVER IP-ADDRESS WITHIN THIS"
+       url = "opc.tcp://localhost:4840"
        async with Client(url=url) as client:
             root = client.get_root_node()
             print("Root node using asyncua library is",root)
@@ -31,8 +31,8 @@ def using_opcua_lib():
 
 if __name__ == '__main__':
      
-    establish_asyncclient = asyncio.run(using_asyncua_lib())
+    asyncio.run(using_asyncua_lib())
     
     # ---------USE FOR OPCUA TESTING---------
-    #establish_opcuaclient = using_opcua_lib()
+    #using_opcua_lib()
      

@@ -5,7 +5,7 @@ if __name__ == "__main__":
     server = Server()
 
     # Setup server endpoint
-    server.set_endpoint("opc.tcp://localhost:4840/freeopcua/server/")
+    server.set_endpoint("opc.tcp://localhost:4840/")
 
     # Setup server namespace
     uri = "http://example.org"
