@@ -4,7 +4,7 @@ This repository contains a curated list of resources and tools for working with 
 
 ## Background
 
-OPC is a set of communication standards used in industrial automation and process control. It enables interoperability between devices and applications from different vendors, facilitating seamless data exchange and real-time control. OPC UA (Unified Architecture) is the modern and platform-independent version of OPC, designed for enhanced security, scalability, and flexibility.
+OPC is a set of communication standards used in industrial automation and process control. It enables interoperability between devices and applications from different vendors, facilitating seamless data exchange and real-time control. OPC UA (Unified Architecture) is the modern and platform-independent version of OPC, designed for enhanced security, scalability, & flexibility.
 
 ## Architecture
 
